@@ -1,0 +1,96 @@
+.booking-history-page {
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  
+  .welcome {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .no-history {
+    color: #888;
+    font-size: 16px;
+  }
+  
+  .history-table {
+    margin: 0 auto;
+    width: 90%;
+    border-collapse: collapse;
+    font-size: 15px;
+    overflow-x: auto; /* ✅ prevent overflow on small screens */
+    display: block;
+  }
+  
+  .history-table th,
+  .history-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    white-space: nowrap; /* ✅ prevents text breaking weirdly */
+  }
+  
+  .history-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .history-table tr:nth-child(even) {
+    background-color: #fafafa;
+  }
+  
+  .booked {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .cancelled {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* 📱 Small Phones */
+  @media (max-width: 480px) {
+    .welcome {
+      font-size: 18px;
+    }
+  
+    .history-table {
+      font-size: 12px;
+      width: 100%;
+    }
+  
+    .history-table th,
+    .history-table td {
+      padding: 6px;
+    }
+  }
+  
+  /* 📟 Tablets */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .welcome {
+      font-size: 20px;
+    }
+  
+    .history-table {
+      font-size: 13px;
+      width: 95%;
+    }
+  }
+  
+  /* 💻 Laptops */
+  @media (min-width: 769px) and (max-width: 1366px) {
+    .history-table {
+      font-size: 14px;
+      width: 90%;
+    }
+  }
+  
+  /* 🖥️ Large Screens */
+  @media (min-width: 1367px) {
+    .history-table {
+      font-size: 15px;
+      width: 80%;
+    }
+  }
+  

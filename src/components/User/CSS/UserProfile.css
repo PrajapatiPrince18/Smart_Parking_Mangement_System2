@@ -1,0 +1,155 @@
+/* === Profile Page Container === */
+.profile-page {
+    max-width: 500px;
+    margin: 80px auto 40px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+  }
+  
+  /* === Heading === */
+  .heading {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* === Profile Details === */
+  .profile-details p {
+    font-size: 16px;
+    margin: 10px 0;
+    word-wrap: break-word;
+  }
+  
+  /* === Button Styles === */
+  .edit-btn,
+  .save-btn,
+  .cancel-btn,
+  .logout-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s ease;
+  }
+  
+  .edit-btn {
+    background: #007bff;
+    color: white;
+  }
+  .edit-btn:hover {
+    background: #0056b3;
+  }
+  
+  .save-btn {
+    background: #28a745;
+    color: white;
+    margin-right: 10px;
+  }
+  .save-btn:hover {
+    background: #1e7e34;
+  }
+  
+  .cancel-btn {
+    background: #dc3545;
+    color: white;
+  }
+  .cancel-btn:hover {
+    background: #a71d2a;
+  }
+  
+  .logout-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  .logout-btn:hover {
+    background-color: #a71d2a;
+  }
+  
+  /* === Button Row (For Edit + Logout on same line in big screens) === */
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  /* === Profile Edit Fields === */
+  .profile-edit label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+  
+  .profile-edit input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  /* === Responsive Design === */
+  @media (max-width: 768px) {
+    .profile-page {
+      width: 90%;
+      margin: 60px auto;
+      padding: 15px;
+    }
+  
+    .heading {
+      font-size: 20px;
+    }
+  
+    .profile-details p {
+      font-size: 15px;
+    }
+  
+    /* Stack buttons on tablets */
+    .button-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* Make all buttons full width */
+    .edit-btn,
+    .logout-btn,
+    .save-btn,
+    .cancel-btn {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile-page {
+      width: 95%;
+      margin: 40px auto;
+      padding: 12px;
+    }
+  
+    .heading {
+      font-size: 18px;
+    }
+  
+    .profile-details p {
+      font-size: 14px;
+    }
+  
+    /* Buttons also full width on phones */
+    .edit-btn,
+    .logout-btn,
+    .save-btn,
+    .cancel-btn {
+      width: 100%;
+    }
+  }
+  

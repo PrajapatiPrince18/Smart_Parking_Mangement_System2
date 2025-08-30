@@ -1,0 +1,150 @@
+* {
+    font-family: "Trebuchet MS", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 15px; /* extra padding for small screens */
+  }
+  
+  .form-design {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form-design h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+  }
+  
+  .form-design label {
+    display: block;
+    text-align: left;
+    margin: 6px;
+    font-weight: 600;
+    color: #444;
+    font-size: 18px;
+  }
+  
+  .form-design input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 18px;
+  }
+  
+  .form-design button {
+    width: 100%;
+    padding: 12px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .form-design button:hover {
+    background: #1b5ed7;
+  }
+  
+  .form-footer {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 18px;
+  }
+  
+  .link-text {
+    color: blue;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .admin-text {
+    color: rgb(92, 92, 92);
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* ================== */
+  /* 📱 Responsiveness */
+  /* ================== */
+  
+  /* Small Mobile (≤ 320px) */
+  @media (max-width: 320px) {
+    .form-design {
+      padding: 20px;
+      max-width: 90%;
+    }
+    .form-design h1 {
+      font-size: 18px;
+    }
+    .form-design input,
+    .form-design button {
+      font-size: 12px;
+      padding: 8px;
+    }
+    .form-footer {
+      font-size: 12px;
+    }
+  }
+  
+  /* Mobile Phones (≤ 480px) */
+  @media (max-width: 480px) {
+    .form-design {
+      padding: 25px;
+      max-width: 95%;
+    }
+    .form-design h1 {
+      font-size: 20px;
+    }
+    .form-design input,
+    .form-design button {
+      font-size: 13px;
+    }
+  }
+  
+  /* Tablets (≤ 768px) */
+  @media (max-width: 768px) {
+    .form-design {
+      max-width: 80%;
+    }
+    .form-design h1 {
+      font-size: 22px;
+    }
+  }
+  
+  /* Small Laptops (≤ 1024px) */
+  @media (max-width: 1024px) {
+    .form-design {
+      max-width: 60%;
+    }
+  }
+  
+  /* Large Screens (≥ 1200px) */
+  @media (min-width: 1200px) {
+    .form-design {
+      max-width: 500px;
+    }
+  }
+  

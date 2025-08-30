@@ -1,0 +1,195 @@
+/* Sticky Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #0066cc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+/* Hamburger button */
+.hamburger {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* Profile section */
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -300px; /* hidden by default */
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 1100;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar .close-btn {
+  font-size: 28px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  float: right;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 50px 0 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #0066cc;
+}
+
+/* Overlay background when sidebar is open */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1050;
+}
+
+/* ========================= */
+/* RESPONSIVENESS */
+/* ========================= */
+
+/* Small devices (phones, <576px) */
+@media (max-width: 575px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .logo {
+    font-size: 16px;
+  }
+
+  .profile a {
+    font-size: 14px;
+  }
+
+  .profile img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+}
+
+/* Medium devices (tablets, 576px–768px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .profile a {
+    font-size: 16px;
+  }
+
+  .profile img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .sidebar {
+    width: 220px;
+  }
+}
+
+/* Large devices (laptops, 769px–1200px) */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .profile a {
+    font-size: 18px;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+}
+
+/* Extra large devices (desktop & big screens, >1200px) */
+@media (min-width: 1201px) {
+  .navbar {
+    padding: 0 50px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .profile a {
+    font-size: 20px;
+  }
+
+  .profile img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .sidebar {
+    width: 280px;
+  }
+}
